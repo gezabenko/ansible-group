@@ -41,5 +41,5 @@ Example Playbook
 License
 -------
 
-BSD
+GPLv3
 
