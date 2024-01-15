@@ -1,4 +1,4 @@
-Group
+Ansible - Group
 =========
 
 Manage groups
@@ -27,7 +27,7 @@ group:
 Dependencies
 ------------
 
-- ansible.builtin.group
+- [ansible.builtin.group](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/group_module.html#ansible-collections-ansible-builtin-group-module)
 
 Example Playbook
 ----------------
