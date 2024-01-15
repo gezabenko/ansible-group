@@ -1,7 +1,7 @@
 Ansible - Group
 =========
 
-Manage groups
+Manage groups with Ansible.
 
 Requirements
 ------------
@@ -14,9 +14,8 @@ Role Variables
 Only one variable needed for use (name), but implemented all [module's](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/group_module.html#ansible-collections-ansible-builtin-group-module) parameters. Example:
 
 ```yaml
-group:
-  backup:
-    force: 'true'
+group_group:
+  - name: backup
     gid: 999
     local: 'true'
     non_unique: 'true'

@@ -1,7 +1,7 @@
 ---
 # defaults file for group
-force: "false"
-local: "false"
-non_unique: "false"
-state: "present"
-system: "false"
+group__default_force: "false"
+group__default_local: "false"
+group__default_non_unique: "false"
+group__default_state: "present"
+group__default_system: "false"
