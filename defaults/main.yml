@@ -1,2 +1,7 @@
 ---
 # defaults file for group
+force: "false"
+local: "false"
+non_unique: "false"
+state: "present"
+system: "false"
