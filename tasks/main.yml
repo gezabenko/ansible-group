@@ -1,17 +1,16 @@
 ---
 # tasks file for group
-- name: GROUP | Managing groups...
+- name: Managing groups...
   become: true
   ansible.builtin.group:
-    gid: '{{ item.gid | default(omit) }}'
-    local: '{{ item.local | default(group__default_local) }}'
-    name: '{{ item.name }}'
-    non_unique: '{{ item.non_unique | default(group__default_non_unique) }}'
-    state: '{{ item.state | default(group__default_state) }}'
-    system: '{{ item.system | default(group__default_system) }}'
-  with_items: "{{ group_group }}"
-  when: group_group is defined
+    gid: "{{ item.gid | default(omit) }}"
+    local: "{{ item.local | default(group__default_local) }}"
+    name: "{{ item.name }}"
+    non_unique: "{{ item.non_unique | default(group__default_non_unique) }}"
+    state: "{{ item.state | default(group__default_state) }}"
+    system: "{{ item.system | default(group__default_system) }}"
+  with_items: "{{ group }}"
+  when: group is defined
   tags:
-    - group_group
+    - group
     - manage
-
